@@ -1,0 +1,25 @@
+<%- include('layout/header') %>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Add New User</h2>
+        <form action="/add" method="post" id="add-form" enctype="multipart/form-data" class="custom-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control custom-input" id="name" placeholder="Enter name"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="summary">Summary</label>
+                <input type="summary" name="summary" class="form-control custom-input" id="summary" placeholder="Enter summary"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="image">Select Image</label>
+                <input type="file" name="image" class="form-control-file custom-file-input" id="image" required>
+            </div>
+            <button type="submit" class="btn btn-primary custom-button">Add User</button>
+        </form>
+    </div>
+
+
+    <%- include('layout/footer') %>
